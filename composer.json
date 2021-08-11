@@ -1,0 +1,18 @@
+{
+    "name": "user/junior_coding_test",
+    "description": "Junior developer coding test",
+    "require": {
+    },
+    "authors": [
+        {
+            "name": "ravihidayat",
+            "email": "naufalravi@graduate.utm.my"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MyApp\\": "/app",
+            "Public\\": "/public"
+        }
+    }
+}
