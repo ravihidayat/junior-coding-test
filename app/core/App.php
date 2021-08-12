@@ -39,14 +39,15 @@ class App
         }
 
         // calls the method desired from the current controller object.
-        call_user_func($this->controller, $this->method);
+        call_user_func([$this->controller, $this->method]);
     }
 
     public function parseUrl()
     {
         if ($_GET['url'] ?? false) {
+            // Filters for special characters.
             $url = filter_var(rtrim($_GET['url'], '/'), FILTER_SANITIZE_URL);
-            $url = explode('/', $url);
+            $url = explode('/', str_replace('-', '', ucwords($url, '-')));
             return $url;
         }
     }
