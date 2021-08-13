@@ -29,16 +29,16 @@
     <section id="body">
         <div class="container">
             <form action="" method="post" id="product_form">
-                <label for="sku">SKU</label>
+                <label class="col-md-1 mt-4" for="sku">SKU</label>
                 <input type="text" name="sku" id="sku"><br><br>
 
-                <label for="name">Name</label>
+                <label class="col-md-1" for="name">Name</label>
                 <input type="text" name="name" id="name"><br><br>
 
-                <label for="price">Price</label>
+                <label class="col-md-1" for="price">Price ($)</label>
                 <input type="number" name="price" id="price"><br><br><br>
 
-                <label for="switcher">Type Switcher</label>
+                <label class="col-md-2" for="switcher">Type Switcher</label>
                 <select name="switcher" id="productType">
                     <option value="">Type Switcher</option>
                     <option value="DVD" id="DVD">DVD</option>
