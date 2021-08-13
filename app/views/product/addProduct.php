@@ -10,21 +10,21 @@
 </head>
 
 <body>
-    <section id="navMenu" class="mt-4">
-        <div class="d-flex justify-content-between">
+    <section id="navMenu" class="container mt-4">
+        <div class="container d-flex justify-content-between">
             <div class="d-flex justify-content-start">
                 <h2>Product Add</h2>
             </div>
 
             <div class="d-flex justify-content-end">
-                <button type="button" class="btn btn-primary ml-5">Save</button>
+                <button type="button" class="btn btn-primary mr-5">Save</button>
                 <button type="button" id="delete-product-btn" class="btn btn-danger" onclick="window.location.href='./'">Cancel</button>
             </div>
         </div>
         <hr>
     </section>
 
-    <section id="body">
+    <section id="body" class="container">
         <form action="" method="post" id="product_form">
             <label for="sku">SKU</label>
             <input type="text" name="sku" id="sku"><br><br>

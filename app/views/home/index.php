@@ -10,20 +10,20 @@
 </head>
 
 <body>
-    <section id="navMenu" class="mt-4">
+    <section id="navMenu" class="container mt-4">
         <div class="d-flex justify-content-between">
             <div class="d-flex justify-content-start">
                 <h2>Product List</h2>
             </div>
 
             <div class="d-flex justify-content-end">
-                <button type="button" class="btn btn-primary ml-5" onclick="window.location.href='add-product'">ADD</button>
+                <button type="button" class="btn btn-primary mr-5" onclick="window.location.href='add-product'">ADD</button>
                 <button type="button" id="delete-product-btn" class="btn btn-danger">MASS DELETE</button>
             </div>
         </div>
         <hr>
     </section>
 
-    <section id="body">
-
+    <section id="body" class="container">
+        <h1>Body</h1>
     </section>
