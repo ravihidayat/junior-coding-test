@@ -17,7 +17,7 @@ class App
 
         // Getting the right controller by checking whether the
         // given path has a controller made for it.
-        if (file_exists("../app/controllers/$url[0].php")) {
+        if (file_exists("app/controllers/$url[0].php")) {
             $this->controller = $url[0];
             unset($url[0]);
         }
@@ -25,7 +25,7 @@ class App
         // Initializing a controller instance.
         // If '/' or '' path is being requested, then
         // it should be a Home controller, the default value.
-        require("../app/controllers/$this->controller.php");
+        require("app/controllers/$this->controller.php");
         $this->controller = new $this->controller;
 
         // Getting the right method.

@@ -9,7 +9,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "MyApp\\": "/app",
+            "MyApp\\": "app/",
             "MyApp\\controllers\\": "app/controllers",
             "MyApp\\core\\": "app/core"
         }

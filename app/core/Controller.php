@@ -7,6 +7,6 @@ class Controller
 
     public function view($view)
     {
-        require("../app/views/$view.php");
+        require("app/views/$view.php");
     }
 }
