@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="app/assets/css/style.css">
     <title>Product Add</title>
 </head>
 
@@ -40,11 +42,15 @@
 
                 <label class="col-md-2" for="switcher">Type Switcher</label>
                 <select name="switcher" id="productType">
-                    <option value="">Type Switcher</option>
+                    <option value="" id="none">Type Switcher</option>
                     <option value="DVD" id="DVD">DVD</option>
                     <option value="Furniture" id="Furniture">Furniture</option>
                     <option value="Book" id="Book">Book</option>
                 </select>
+
+                <div id="switch">
+
+                </div>
             </form>
         </div>
     </section>
