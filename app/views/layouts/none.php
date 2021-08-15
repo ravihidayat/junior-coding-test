@@ -1,1 +1,1 @@
-<h1>None</h1>
+<span>Please choose a type!</span>
