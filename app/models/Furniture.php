@@ -1,18 +1,27 @@
 <?php
 
-namespace MyApp\models;
-
 class Furniture extends Product
 {
-    private $height;
-    private $width;
-    private $length;
+    private $dimension;
 
-    public function __construct($sku = "", $name = "", $price = "", $height = "", $width = "", $length = "")
+    public function __construct($sku = "", $name = "", $price = "", $attribute = [])
     {
         parent::__construct($sku, $name, $price);
-        $this->height = $height;
-        $this->width = $width;
-        $this->length = $length;
+        $this->setAttribute($attribute);
     }
+
+    public function setAttribute($attribute)
+    {
+        $this->dimension = "{$attribute['height']}x{$attribute['width']}x{$attribute['length']}";
+    }
+
+    public function getAttribute()
+    {
+        return $this->dimension;
+    }
+
+    // public function insertProduct()
+    // {
+
+    // }
 }

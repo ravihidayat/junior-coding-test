@@ -36,17 +36,19 @@ use MyApp\config\Constants as Config;
     <section id="body">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <div class="card bg-light mb-5 card-custom">
-                        <div class="card-body">
-                            <input type="checkbox" class="delete-checkbox checkbox-custom">
-                            <p class="card-text text-center"></p>
-                            <p class="card-text text-center"></p>
-                            <p class="card-text text-center"></p>
-                            <p class="card-text text-center"></p>
+                <?php foreach ($data as $product) : ?>
+                    <div class="col-md-3">
+                        <div class="card bg-light mb-5 card-custom">
+                            <div class="card-body">
+                                <input type="checkbox" class="delete-checkbox checkbox-custom">
+                                <p class="card-text text-center"><?= $product->getSKU() ?></p>
+                                <p class="card-text text-center"><?= $product->getName() ?></p>
+                                <p class="card-text text-center"><?= $product->getPrice() ?> $</p>
+                                <p class="card-text text-center"><?= $product->getAttribute() ?></p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </section>

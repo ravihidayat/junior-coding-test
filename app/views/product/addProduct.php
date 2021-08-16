@@ -26,7 +26,7 @@ use MyApp\config\Constants as Config;
                 </div>
 
                 <div class="d-flex justify-content-end">
-                    <button type="button" class="btn btn-primary mr-5">Save</button>
+                    <button type="submit" class="btn btn-primary mr-5" name="submit">Save</button>
                     <button type="button" id="delete-product-btn" class="btn btn-danger" onclick="window.location.href='<?= Config::POP ?>'">Cancel</button>
                 </div>
             </div>

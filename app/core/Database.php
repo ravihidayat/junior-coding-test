@@ -18,8 +18,7 @@ class Database
     private $options = [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_EMULATE_PREPARES => false,
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
-        PDO::ATTR_PERSISTENT => true
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ
     ];
 
     public function __construct()
@@ -37,14 +36,9 @@ class Database
         $this->stmt = self::$dbh->prepare($query);
     }
 
-    public function execute()
+    public function getResultSet()
     {
         $this->stmt->execute();
-    }
-
-    public function querySetResult()
-    {
-        $this->execute();
         self::$dbh = null;
         return $this->stmt->fetchAll();
     }
