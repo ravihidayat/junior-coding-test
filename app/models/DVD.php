@@ -1,5 +1,7 @@
 <?php
 
+use MyApp\models\Product;
+
 class DVD extends Product
 {
     private $size;

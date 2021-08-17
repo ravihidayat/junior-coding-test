@@ -49,6 +49,8 @@ class App
             $url = filter_var(rtrim($_GET['url'], '/'), FILTER_SANITIZE_URL);
             $url = explode('/', str_replace('-', '', ucwords($url, '-')));
             return $url;
+            // AddProduct
+            // add
         }
     }
 }

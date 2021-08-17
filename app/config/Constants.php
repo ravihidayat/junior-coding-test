@@ -8,22 +8,7 @@ class Constants
     const PUSH = 'add-product';
     const POP = './';
     const DB_HOST = 'localhost';
-    const DB_NAME = 'phpmvc';
+    const DB_NAME = 'product_db';
     const DB_USERNAME = 'root';
     const DB_PASSWORD = '';
-
-    public static function getSelf()
-    {
-        return new Constants;
-    }
-
-    public static function getAssets()
-    {
-        return self::ASSETS;
-    }
-
-    public static function getPop()
-    {
-        return self::POP;
-    }
 }

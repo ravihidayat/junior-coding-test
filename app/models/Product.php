@@ -1,5 +1,7 @@
 <?php
 
+namespace MyApp\models;
+
 use MyApp\core\Database;
 
 abstract class Product
@@ -7,6 +9,7 @@ abstract class Product
     private $sku;
     private $name;
     private $price;
+    private $attribute;
     private $db;
 
     public function __construct($sku = "", $name = "", $price = "")

@@ -41,10 +41,10 @@ use MyApp\config\Constants as Config;
                         <div class="card bg-light mb-5 card-custom">
                             <div class="card-body">
                                 <input type="checkbox" class="delete-checkbox checkbox-custom">
-                                <p class="card-text text-center"><?= $product->getSKU() ?></p>
-                                <p class="card-text text-center"><?= $product->getName() ?></p>
-                                <p class="card-text text-center"><?= $product->getPrice() ?> $</p>
-                                <p class="card-text text-center"><?= $product->getAttribute() ?></p>
+                                <p class="card-text text-center"><?= $product->sku ?></p>
+                                <p class="card-text text-center"><?= $product->name ?></p>
+                                <p class="card-text text-center"><?= $product->price ?> $</p>
+                                <p class="card-text text-center"><?= $product->attribute ?></p>
                             </div>
                         </div>
                     </div>

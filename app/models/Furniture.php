@@ -1,5 +1,7 @@
 <?php
 
+use MyApp\models\Product;
+
 class Furniture extends Product
 {
     private $dimension;

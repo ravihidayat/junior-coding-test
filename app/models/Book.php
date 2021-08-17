@@ -1,5 +1,7 @@
 <?php
 
+use MyApp\models\Product;
+
 class Book extends Product
 {
     private $weight;
@@ -12,7 +14,8 @@ class Book extends Product
 
     public function setAttribute($attribute)
     {
-        $this->weight = "{$attribute['weight']}";
+        // $this->weight = "{$attribute['weight']}";
+        $this->weight = $attribute;
     }
 
     public function getAttribute()

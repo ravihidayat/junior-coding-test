@@ -19,24 +19,24 @@ use MyApp\config\Constants as Config;
 
 <body>
     <section id="navMenu">
-        <div class="container mt-4">
-            <div class="container d-flex justify-content-between">
-                <div class="d-flex justify-content-start">
-                    <h2>Product Add</h2>
-                </div>
-
-                <div class="d-flex justify-content-end">
-                    <button type="submit" class="btn btn-primary mr-5" name="submit">Save</button>
-                    <button type="button" id="delete-product-btn" class="btn btn-danger" onclick="window.location.href='<?= Config::POP ?>'">Cancel</button>
-                </div>
-            </div>
-            <hr>
-        </div>
     </section>
 
     <section id="body">
         <div class="container">
-            <form action="" method="post" id="product_form">
+            <form action="Home.php" method="post" id="product_form">
+                <div class="container mt-4">
+                    <div class="container d-flex justify-content-between">
+                        <div class="d-flex justify-content-start">
+                            <h2>Product Add</h2>
+                        </div>
+
+                        <div class="d-flex justify-content-end">
+                            <button type="submit" class="btn btn-primary mr-5" name="submit">Save</button>
+                            <button type="button" id="delete-product-btn" class="btn btn-danger" onclick="window.location.href='<?= Config::POP ?>'">Cancel</button>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
                 <label class="col-md-1 mt-4" for="sku">SKU</label>
                 <input type="text" name="sku" id="sku"><br><br>
 
