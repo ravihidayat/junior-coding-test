@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "d5f50beb82e147992eab72b5c608fb06",
+=======
+    "content-hash": "284c8193ad50355955861fc64ab04bdc",
+>>>>>>> 7faacf49bf9dbfbdeab47c19758f48c08eb01b5c
     "packages": [],
     "packages-dev": [
         {
@@ -56,11 +60,6 @@
                 "phpcs",
                 "standards"
             ],
-            "support": {
-                "issues": "https://github.com/squizlabs/PHP_CodeSniffer/issues",
-                "source": "https://github.com/squizlabs/PHP_CodeSniffer",
-                "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
-            },
             "time": "2021-04-09T00:54:41+00:00"
         }
     ],
@@ -70,8 +69,12 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
+<<<<<<< HEAD
         "php": "*"
+=======
+        "php": "^7.0"
+>>>>>>> 7faacf49bf9dbfbdeab47c19758f48c08eb01b5c
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "1.1.0"
 }

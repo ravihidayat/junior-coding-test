@@ -16,7 +16,11 @@
         }
     },
     "require": {
+<<<<<<< HEAD
         "php": "*"
+=======
+        "php": "^7.0"
+>>>>>>> 7faacf49bf9dbfbdeab47c19758f48c08eb01b5c
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.6"
