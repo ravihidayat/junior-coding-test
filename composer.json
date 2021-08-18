@@ -15,6 +15,9 @@
             "MyApp\\models\\": "app/models"
         }
     },
+    "require": {
+        "php": "*"
+    },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.6"
     }
