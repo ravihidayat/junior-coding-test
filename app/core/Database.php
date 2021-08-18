@@ -4,15 +4,15 @@ namespace MyApp\core;
 
 use PDO;
 use PDOException;
-use MyApp\config\Constants;
+use MyApp\config\Constants as Config;
 
 
 class Database
 {
-    private $hostname = Constants::DB_HOST;
-    private $dbname = Constants::DB_NAME;
-    private $username = Constants::DB_USERNAME;
-    private $password = Constants::DB_PASSWORD;
+    private $hostname = Config::DB_HOST;
+    private $dbname = Config::DB_NAME;
+    private $username = Config::DB_USERNAME;
+    private $password = Config::DB_PASSWORD;
     private static $dbh;
     private $stmt;
     private $options = [
