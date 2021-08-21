@@ -1,4 +1,14 @@
-<label class="col-md-1 mt-4" for="size">Size (MB)</label>
-<input type="number" name="size" id="size" name="attribute[size]"><br><br>
+<div class="form-group row">
+    <label class="col-md-2 mt-4 col-form-label" for="size">Size (MB)</label>
 
-<span>Please, provide size</span>
+    <div class="col-md-4 mt-4">
+        <input type="number" id="size" name="attribute[size]">
+    </div>
+
+</div>
+
+<div class="form-group row">
+    <div class="col-md-3 mt-2">
+        <span class="form-text font-weight-bold">Please, provide size in MB</span>
+    </div>
+</div>

@@ -37,22 +37,40 @@ use MyApp\config\Constants as Config;
                     </div>
                     <hr>
                 </div>
-                <label class="col-md-1 mt-4" for="sku">SKU</label>
-                <input type="text" name="sku" id="sku"><br><br>
+                <div class="form-group row">
+                    <label class="col-md-2 mt-4 col-form-label" for="sku">SKU</label>
+                    <div class="col-md-4 mt-4">
+                        <input class="form-control" type="text" name="sku" id="sku" required>
+                    </div>
+                </div>
 
-                <label class="col-md-1" for="name">Name</label>
-                <input type="text" name="name" id="name"><br><br>
+                <div class="form-group row">
+                    <label class="col-md-2 col-form-label" for="name">Name</label>
+                    <div class="col-md-4">
+                        <input class="form-control" type="text" name="name" id="name" required>
+                    </div>
+                </div>
 
-                <label class="col-md-1" for="price">Price ($)</label>
-                <input type="number" name="price" id="price"><br><br><br>
+                <div class="form-group row">
+                    <label class="col-md-2 col-form-label" for="price">Price ($)</label>
+                    <div class="col-md-4">
+                        <input class="form-control" type="number" name="price" id="price" required>
+                    </div>
 
-                <label class="col-md-2" for="switcher">Type Switcher</label>
-                <select name="switcher" id="productType">
-                    <option value="" id="None">Type Switcher</option>
-                    <option value="DVD" id="DVD">DVD</option>
-                    <option value="Furniture" id="Furniture">Furniture</option>
-                    <option value="Book" id="Book">Book</option>
-                </select>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-md-2 col-form-label" for="switcher">Type Switcher</label>
+                    <div class="col-md-4">
+                        <select class="form-control" name="switcher" id="productType" required>
+                            <option value="" id="none">Type Switcher</option>
+                            <option value="DVD" id="DVD">DVD</option>
+                            <option value="Furniture" id="Furniture">Furniture</option>
+                            <option value="Book" id="Book">Book</option>
+                        </select>
+                    </div>
+
+                </div>
 
                 <div id="switch">
 
