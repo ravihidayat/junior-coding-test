@@ -6,16 +6,15 @@ class Book extends Product
 {
     private $weight;
 
-    public function __construct($sku = "", $name = "", $price = "", $attribute = [])
+    public function __construct()
     {
-        parent::__construct($sku, $name, $price);
-        $this->weight = $this->setAttribute($attribute);
+        parent::__construct();
+        $this->setType(3);
     }
 
     public function setAttribute($attribute)
     {
-        // $this->weight = "{$attribute['weight']}";
-        $this->weight = $attribute;
+        $this->weight = "{$attribute['weight']}";
     }
 
     public function getAttribute()

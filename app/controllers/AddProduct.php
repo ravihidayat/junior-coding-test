@@ -1,17 +1,12 @@
 <?php
 
 use MyApp\core\Controller;
-use MyApp\config\Constants;
+use MyApp\config\Constants as Config;
 
 class AddProduct extends Controller
 {
     public function index()
     {
-        // if($_POST['submit'] ?? false) {
-        //     INSERT xx VALUES ($_POST['attribute['size'])
-        //     INSERT xx
-        //     header Home
-        // }
         $this->view('product/addProduct');
         $this->view('layouts/footer');
     }

@@ -23,7 +23,7 @@ use MyApp\config\Constants as Config;
 
     <section id="body">
         <div class="container">
-            <form action="Home.php" method="post" id="product_form">
+            <form action="<?= Config::BASEURL ?>/" method="post" id="product_form">
                 <div class="container mt-4">
                     <div class="container d-flex justify-content-between">
                         <div class="d-flex justify-content-start">
@@ -54,7 +54,7 @@ use MyApp\config\Constants as Config;
                 <div class="form-group row">
                     <label class="col-md-2 col-form-label" for="price">Price ($)</label>
                     <div class="col-md-4">
-                        <input class="form-control" type="number" name="price" id="price" required>
+                        <input class="form-control" type="number" step="0.1" name="price" id="price" required>
                     </div>
 
                 </div>

@@ -6,10 +6,10 @@ class Furniture extends Product
 {
     private $dimension;
 
-    public function __construct($sku = "", $name = "", $price = "", $attribute = [])
+    public function __construct()
     {
-        parent::__construct($sku, $name, $price);
-        $this->setAttribute($attribute);
+        parent::__construct();
+        $this->setType(2);
     }
 
     public function setAttribute($attribute)
@@ -21,9 +21,4 @@ class Furniture extends Product
     {
         return $this->dimension;
     }
-
-    // public function insertProduct()
-    // {
-
-    // }
 }
