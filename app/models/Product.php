@@ -19,7 +19,9 @@ abstract class Product
 
     public function getAllProducts()
     {
-        $this->db->query("SELECT * FROM product");
+        $this->db->query("SELECT * FROM ((product
+                            INNER JOIN attribute_type ON product.type_id = attribute_type.attribute_type_id)
+                            INNER JOIN product_value ON product.sku = product_value.sku)");
         return $this->db->getResultSet();
     }
 

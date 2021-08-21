@@ -22,7 +22,7 @@ class Home extends Controller
             }
         }
 
-        $this->view('home/index');
+        $this->view('home/index', $this->model("Book")->getAllProducts());
         $this->view('layouts/footer');
         // echo "Failed";
         // var_dump($_POST);
