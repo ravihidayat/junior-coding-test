@@ -2,6 +2,7 @@
 
 namespace MyApp\config;
 
+// This class mimics how ENVs work, but this is much simpler.
 class Constants
 {
     const ASSETS = 'app/assets';
@@ -17,4 +18,5 @@ class Constants
     const DB_NAME = 'phpmvc';
     const DB_USERNAME = 'root';
     const DB_PASSWORD = '';
+    const CHARSET = 'utf8mb4';
 }
