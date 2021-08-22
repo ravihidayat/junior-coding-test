@@ -40,7 +40,7 @@ use MyApp\config\Constants as Config;
                 <div class="form-group row">
                     <label class="col-md-2 mt-4 col-form-label" for="sku">SKU</label>
                     <div class="col-md-4 mt-4">
-                        <input class="form-control" type="text" name="sku" id="sku" placeholder="Strictly alphanumeric and dashes (6-8 digits)" minlength="8" maxlength="10" required>
+                        <input class="form-control" type="text" name="sku" id="sku" placeholder="Strictly alphanumeric and dashes (8-10 digits)" minlength="8" maxlength="10" required>
                     </div>
                 </div>
 
@@ -64,9 +64,9 @@ use MyApp\config\Constants as Config;
                     <div class="col-md-4">
                         <select class="form-control" name="switcher" id="productType" required>
                             <option value="" id="none">Type Switcher</option>
-                            <option value="DVD" id="DVD">DVD</option>
-                            <option value="Furniture" id="Furniture">Furniture</option>
-                            <option value="Book" id="Book">Book</option>
+                            <option value="DVD" id="DVD_form">DVD</option>
+                            <option value="Furniture" id="Furniture_form">Furniture</option>
+                            <option value="Book" id="Book_form">Book</option>
                         </select>
                     </div>
 
