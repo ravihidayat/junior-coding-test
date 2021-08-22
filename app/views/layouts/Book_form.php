@@ -1,7 +1,7 @@
 <div class="form-group row">
     <label class="col-md-2 mt-4 col-form-label" for="weight">Weight (KG)</label>
     <div class="col-md-4 mt-4">
-        <input type="number" id="weight" name="attribute[weight]">
+        <input type="number" id="weight" name="attribute[weight]" required>
     </div>
 </div>
 
