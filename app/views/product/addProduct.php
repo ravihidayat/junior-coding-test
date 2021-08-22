@@ -40,21 +40,21 @@ use MyApp\config\Constants as Config;
                 <div class="form-group row">
                     <label class="col-md-2 mt-4 col-form-label" for="sku">SKU</label>
                     <div class="col-md-4 mt-4">
-                        <input class="form-control" type="text" name="sku" id="sku" required>
+                        <input class="form-control" type="text" name="sku" id="sku" placeholder="Strictly alphanumeric and dashes (6-8 digits)" minlength="8" maxlength="10" required>
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <label class="col-md-2 col-form-label" for="name">Name</label>
                     <div class="col-md-4">
-                        <input class="form-control" type="text" name="name" id="name" required>
+                        <input class="form-control" type="text" name="name" id="name" placeholder="Insert any alphanumeric characters" required>
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <label class="col-md-2 col-form-label" for="price">Price ($)</label>
                     <div class="col-md-4">
-                        <input class="form-control" type="number" step="0.1" name="price" id="price" required>
+                        <input class="form-control" type="number" step="0.1" name="price" id="price" placeholder="Insert any non-negative number" required>
                     </div>
 
                 </div>
