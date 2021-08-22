@@ -28,7 +28,7 @@ use MyApp\config\Constants as Config;
 
                 <div class="d-flex justify-content-end">
                     <button type="button" class="btn btn-primary mr-5" onclick="window.location.href='<?= Config::PUSH ?>'">ADD</button>
-                    <button type="submit" id="delete-product-btn" type="submit" form="deleteItem" class="btn btn-danger">MASS DELETE</button>
+                    <button type="submit" id="delete-product-btn" type="submit" form="delete_form" class="btn btn-danger">MASS DELETE</button>
                 </div>
             </div>
             <hr>
@@ -37,7 +37,7 @@ use MyApp\config\Constants as Config;
 
     <section id="body">
         <div class="container">
-            <form id="deleteItem" action="<?= Config::BASEURL ?>/" method="POST">
+            <form id="delete_form" action="<?= Config::BASEURL ?>/" method="POST">
                 <div class="row">
                     <?php foreach ($data as $product) : ?>
                         <div class="col-md-3">

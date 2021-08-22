@@ -1,0 +1,12 @@
+.checkbox-custom {
+    width: 15px;
+    height: 15px;
+}
+
+.container {
+    max-width: 80%;
+}
+
+.card-custom {
+    max-width: 15rem;
+}
