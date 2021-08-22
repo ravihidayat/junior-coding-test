@@ -24,3 +24,7 @@ Consists of two pages:
 Also complies to PSR-4 autoloader. Codesniffer is also installed, but did not really use it.
 
 Hosted on [Heroku](heroku.com), using ClearDB addon.
+
+## QA Tester Feedback
+
+The screenshot of the feedback is hosted [here](https://imgur.com/1eY9ALl)
