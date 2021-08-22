@@ -12,7 +12,9 @@ use MyApp\config\Constants as Config;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="<?= Config::ASSETS ?>/css/style.css">
+    <!-- <script src="/js/massDelete.js"></script> -->
     <title>Product List</title>
 </head>
 
@@ -26,7 +28,7 @@ use MyApp\config\Constants as Config;
 
                 <div class="d-flex justify-content-end">
                     <button type="button" class="btn btn-primary mr-5" onclick="window.location.href='<?= Config::PUSH ?>'">ADD</button>
-                    <button type="button" id="delete-product-btn" class="btn btn-danger">MASS DELETE</button>
+                    <button type="submit" id="delete-product-btn" type="submit" form="deleteItem" class="btn btn-danger">MASS DELETE</button>
                 </div>
             </div>
             <hr>
@@ -35,20 +37,22 @@ use MyApp\config\Constants as Config;
 
     <section id="body">
         <div class="container">
-            <div class="row">
-                <?php foreach ($data as $product) : ?>
-                    <div class="col-md-3">
-                        <div class="card bg-light mb-5 card-custom">
-                            <div class="card-body">
-                                <input type="checkbox" value="<?= $product->sku ?>" class="delete-checkbox checkbox-custom">
-                                <p class="card-text text-center"><?= $product->sku ?></p>
-                                <p class="card-text text-center"><?= $product->product_name ?></p>
-                                <p class="card-text text-center"><?= $product->price ?> $</p>
-                                <p class="card-text text-center"><?= $product->attribute_type_name ?>: <?= $product->value ?> <?= $product->unit ?></p>
+            <form id="deleteItem" action="<?= Config::BASEURL ?>/" method="POST">
+                <div class="row">
+                    <?php foreach ($data as $product) : ?>
+                        <div class="col-md-3">
+                            <div class="card bg-light mb-5 card-custom">
+                                <div class="card-body">
+                                    <input type="checkbox" name="sku[]" value="<?= $product->sku ?>" class="delete-checkbox checkbox-custom">
+                                    <p class="card-text text-center"><?= $product->sku ?></p>
+                                    <p class="card-text text-center"><?= $product->product_name ?></p>
+                                    <p class="card-text text-center"><?= $product->price ?> $</p>
+                                    <p class="card-text text-center"><?= $product->attribute_type_name ?>: <?= $product->value ?> <?= $product->unit ?></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                <?php endforeach; ?>
-            </div>
+                    <?php endforeach; ?>
+                </div>
+            </form>
         </div>
     </section>

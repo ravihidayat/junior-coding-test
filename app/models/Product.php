@@ -94,6 +94,17 @@ abstract class Product
         return $this->db->countRows();
     }
 
+    public function deleteProducts($sku)
+    {
+        $implodedSku = "('" . implode("', '", $sku) . "')";
+        $query = "DELETE FROM product WHERE sku IN $implodedSku";
+
+        $this->db->query($query);
+        $this->db->execute();
+
+        return $this->db->countRows();
+    }
+
     abstract function getAttribute();
     abstract function setAttribute($attribute);
 }

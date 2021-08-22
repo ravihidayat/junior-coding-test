@@ -12,7 +12,8 @@ class Home extends Controller
         // checks whether it is a POST request or not.
         // If it is, then it shall insert the input to the respective object
         // as its properties.
-        if ($_POST ?? false) {
+
+        if ($_POST['switcher'] ?? false) {
             $item = $this->model($_POST['switcher']);
             $item->setSKU($_POST['sku']);
             $item->setName($_POST['name']);
@@ -22,6 +23,17 @@ class Home extends Controller
             // If insert operation is successful, meaning that new rows are added,
             // then it shall reload the page.
             if ($item->insertProduct() > 0 && $item->insertProductValue() > 0) {
+                header("Location: " . Config::BASEURL);
+            }
+        }
+        // As for this, the deleted to be SKUs are passed through $_POST superglobal.
+        // Then it calls deleteProducts() method from Product class.
+        // As for this case, Book class can represent the whole product. This is similar to how 
+        // getAllProducts() is being handled.
+        elseif ($_POST['sku'] ?? false) {
+            $sku = $_POST['sku'];
+
+            if ($this->model("Book")->deleteProducts($sku)) {
                 header("Location: " . Config::BASEURL);
             }
         }
